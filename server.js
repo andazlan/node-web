@@ -75,6 +75,12 @@ app.get('/bad', (request, response) => {
     })
 });
 
+app.get('/projects', (request, response) => {
+    response.render("projects.hbs", {
+        pageTitle : "My Projects"
+    });
+});
+
 //jangan lupa menjalankan perintah ini,
 //callback dapat diberikan pada parameter ke 2
 app.listen(port, () => {
